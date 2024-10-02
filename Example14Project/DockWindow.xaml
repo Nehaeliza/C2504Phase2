@@ -1,0 +1,27 @@
+﻿<Window x:Class="Example14Project.DockWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Example14Project"
+        mc:Ignorable="d"
+        Title="DockWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Canvas>
+        <DockPanel LastChildFill="True" Canvas.Left="10" Canvas.Top="10" Height="400" Width="400">
+            <Button Content="Top Button" DockPanel.Dock="Top"/>
+            <Button Content="Bottom Button" DockPanel.Dock="Bottom"/>
+
+            <Button Content="Left Button" DockPanel.Dock="Left"/>
+            <Button Content="Right Button" DockPanel.Dock="Right"/>
+            <Button Content="Main Content"/>
+        </DockPanel>
+
+        <DockPanel LastChildFill="True" Canvas.Left="442" Canvas.Top="10" Height="318" Width="323" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button Content="Top Button" DockPanel.Dock="Top"/>
+
+            <Button Content="Right Button" DockPanel.Dock="Right"/>
+
+            <Button Content="Main Content"/>
+        </DockPanel>
+    </Canvas>
+</Window>
