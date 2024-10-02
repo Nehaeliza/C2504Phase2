@@ -1,0 +1,19 @@
+﻿<Window x:Class="FullNameProject.FullNameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FullNameProject"
+        mc:Ignorable="d"
+        Title="FullNameApp" Height="450" Width="800" Closed="Window_Closed" WindowState="Maximized">
+    <Canvas>
+        <TextBlock x:Name="lblFirstName" TextWrapping="Wrap" Background="Beige" Text="FirstName" Canvas.Left="153" Canvas.Top="87" FontSize="16"/>
+        <TextBlock Background="Aqua" TextWrapping="Wrap" Canvas.Left="400" Canvas.Top="90" HorizontalAlignment="Left" Height="30" VerticalAlignment="Center" Width="199" Text="{Binding Person.FirstName}"/>
+        <TextBlock  x:Name="lblLasttName" TextWrapping="Wrap" Text="LastName" Background="Beige" Canvas.Left="153" Canvas.Top="167" FontSize="16"/>
+
+        <TextBlock Background ="Aqua" TextWrapping="Wrap"  Canvas.Left="400" Canvas.Top="167" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21" Width="199" Text="{Binding Person.LastName}"/>
+
+        <Button x:Name="btnEdit" Content="Edit" Canvas.Left="308" Canvas.Top="300" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" Click="btnEdit_Click"/>
+
+    </Canvas>
+</Window>
