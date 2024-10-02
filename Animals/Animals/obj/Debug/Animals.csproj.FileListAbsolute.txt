@@ -1,0 +1,13 @@
+C:\Users\2021471\source\repos\Animals\Animals\bin\Debug\Animals.exe.config
+C:\Users\2021471\source\repos\Animals\Animals\bin\Debug\Animals.exe
+C:\Users\2021471\source\repos\Animals\Animals\bin\Debug\Animals.pdb
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.csproj.AssemblyReference.cache
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.CrowForm.resources
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.DuckForm.resources
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.Form1.resources
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.PeacockForm.resources
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.Properties.Resources.resources
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.csproj.GenerateResource.cache
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.csproj.CoreCompileInputs.cache
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.exe
+C:\Users\2021471\source\repos\Animals\Animals\obj\Debug\Animals.pdb
