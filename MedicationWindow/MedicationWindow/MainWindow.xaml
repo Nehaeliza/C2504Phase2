@@ -1,0 +1,86 @@
+﻿<Window x:Class="MedicationWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicationWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush Stretch="UniformToFill"  ImageSource="/240_F_281427785_gfahY8bX4VYCGo6jlfO8St38wS9cJQop.jpg" Opacity="0.7"/>
+    </Window.Background>
+
+
+    <Grid>
+        <!-- Title "New Medication" at the top -->
+        <TextBlock x:Name="lblNewMedication" Background="Wheat" TextAlignment="Center" TextWrapping="Wrap" Text="New Medication" 
+               FontFamily="Georgia" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" 
+               Height="78" Margin="0,20,0,0" FontWeight="Bold"/>
+        <!-- Adjusted Margin for top position -->
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,139,0,0" Width="613" >
+            <!-- Added margin from the top -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <!-- Medication Name Label -->
+            <TextBlock x:Name="lblMedicationName" Foreground="Beige" TextWrapping="Wrap" Text="Medication Name" FontSize="16"
+                   FontFamily="Georgia" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Width="149" Margin="88,0,0,0" FontWeight="Bold"/>
+
+            <!-- Medication Name TextBox -->
+            <TextBox x:Name="txtMedicationName" Background="CadetBlue" TextWrapping="Wrap" Text="" FontSize="18" 
+                 FontFamily="Georgia" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 Grid.Row="0" Grid.Column="1" Margin="10"/>
+
+            <!-- Start Date Label -->
+            <TextBlock x:Name="lblStartDate" Foreground="Beige" TextWrapping="Wrap" Text="Start Date" FontSize="16"
+                   FontFamily="Georgia" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Width="131" FontWeight="Bold"/>
+
+            <!-- Start Date DatePicker -->
+            <DatePicker Background="CadetBlue" Width="116" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Row="1" Grid.Column="1" Margin="10"/>
+
+            <!-- End Date Label -->
+            <TextBlock x:Name="lblEndDate" Foreground="Beige"  TextWrapping="Wrap" Text="End Date" FontSize="16"
+                   FontFamily="Georgia" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Width="131" FontWeight="Bold"/>
+
+            <!-- End Date DatePicker -->
+            <DatePicker Background="CadetBlue" Width="116" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.Row="2" Grid.Column="1" Margin="10"/>
+
+            <!-- Dosage Label -->
+            <TextBlock x:Name="lblDosage" Foreground="Beige"   TextWrapping="Wrap" Text="Dosage" FontSize="16"
+                   FontFamily="Georgia" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" Width="130" FontWeight="Bold"/>
+
+            <!-- Dosage TextBox -->
+            <TextBox x:Name="txtDosage" Background="CadetBlue" TextWrapping="Wrap" Text="" FontSize="18" 
+                 FontFamily="Georgia" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center"
+                 Grid.Row="3" Grid.Column="1" Margin="10"/>
+
+            <!-- Frequency Label -->
+            <TextBlock x:Name="lblFrequency" Foreground="Beige" TextWrapping="Wrap" Text="Frequency" FontSize="16"
+                   FontFamily="Georgia" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" Width="131" FontWeight="Bold"/>
+
+            <!-- Frequency TextBox -->
+            <TextBox x:Name="txtFrequency" Background="CadetBlue" TextWrapping="Wrap" Text="" FontSize="18" 
+                 FontFamily="Georgia" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center"
+                 Grid.Row="4" Grid.Column="1" Margin="10"/>
+
+            <!-- Create Button -->
+            <Button x:Name="btnCreate" Background="CadetBlue" Foreground="Black" Content="Create" Width="78" HorizontalAlignment="Left" 
+                VerticalAlignment="Top" Grid.Row="5" Margin="261,10,0,0" RenderTransformOrigin="0.191,0.301" Grid.ColumnSpan="2" Height="30" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+
+</Window>
